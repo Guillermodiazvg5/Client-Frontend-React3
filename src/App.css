@@ -17,3 +17,18 @@
   background-size: cover !important;
   background-position: center;
 }
+
+
+.background-nuts {
+
+  background-color: rgba(176, 127, 54, 0.337);
+ 
+ }
+
+.sticky {
+  position: -webkit-sticky ; /* Safari */
+  position: sticky ;
+  top: 0;
+  
+}
+

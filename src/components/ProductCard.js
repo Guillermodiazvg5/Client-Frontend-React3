@@ -9,7 +9,7 @@ import './ProductCard.css'
 export default function ProductCard({imagen, producto , descripcion , precio}) {
   return (
 
-    <Card  className='card text-center m-5 ' style={{ width: '18rem' }}>
+    <Card  className='card text-center m-3 ' style={{ width: '16rem' }}>
 
        <div className='overflow'>
 
