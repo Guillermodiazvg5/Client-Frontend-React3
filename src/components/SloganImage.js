@@ -1,5 +1,7 @@
 import React from "react";
 
+
+import CarouselHealth from "./CarouselHealth";
 import FrutosSecos from '../assets/FrutosSecos.jpg'
 
 
@@ -31,7 +33,12 @@ export default function SloganImage() {
         </div>
 
         <div class="col-6  text-dark d-flex align-items-center justify-content-center text-center second-column ">
-          <img src={FrutosSecos} class="img-fluid rounded " alt="Img Err" />
+         
+         
+         
+          <CarouselHealth></CarouselHealth>
+        
+        
         </div>
       </div>
     </div>

@@ -25,7 +25,7 @@ export default function CardGroup() {
 
   return (
     
-          <Row >
+          <Row className="background-nuts mt-5 mb-5" >
             {productos.map((producto, index) => (
               <Col className="col-md-4" key={index}>
                 <ProductCard

@@ -13,15 +13,17 @@ function App() {
 
       <Header></Header>
 
-      <div className="container background-nuts ">
+      <div className="container  ">
 
         <div className="row">
 
-          <div className=" col-8 d-flex ">
+          <div className=" col-8   ">
 
            
-
+              <h1 className="text-start">Frutos Secos</h1>
               <CardGroup></CardGroup>
+              <h1 className="text-start">Semillas</h1>
+              <CardGroup ></CardGroup>
 
             
 
@@ -30,6 +32,7 @@ function App() {
 
           <div className="col-4  ">
             <div className="sticky mt-5  ">
+            <h1 className="">Carrito</h1>
               <ShoppingCart></ShoppingCart>
             </div>
           </div>
