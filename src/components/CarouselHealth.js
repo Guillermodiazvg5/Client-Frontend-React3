@@ -9,6 +9,9 @@ import Carousel2 from '../assets/Carousel2.jpg'
 
 import Carousel3 from '../assets/Carousel3.jpg'
 
+import carouselModel22 from '../assets/carouselModel22.png'
+
+
 
 
 
@@ -24,7 +27,7 @@ export default function CarouselHealth() {
       <Carousel.Item>
         <img
           className="d-block w-100  h-70 img-carousel"
-          src={FrutosSecos}
+          src={carouselModel22}
           alt="First slide"
         />
         <Carousel.Caption>

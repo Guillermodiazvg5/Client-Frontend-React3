@@ -19,9 +19,28 @@
 }
 
 
+.marco-main{
+
+  max-width: 1680px !important;
+
+  background-color: rgba(124, 76, 32, 0.26);
+  border-radius: 15px;
+  
+
+  border-style: double;
+  border-width: 20px;
+  border-color: #8b451383;
+  
+}
+
+
+
+
+
 .background-nuts {
 
-  background-color: rgba(176, 127, 54, 0.337);
+  background-color: rgba(133, 91, 30, 0.337);
+  border-radius: 1rem;
  
  }
 

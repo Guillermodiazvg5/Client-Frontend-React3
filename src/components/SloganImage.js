@@ -22,10 +22,10 @@ export default function SloganImage() {
             Nourish it with wholesome foods that will keep you feeling great.{" "}
           </p>
 
-          <div class=" col text-start">
+          <div class=" col text-start mt-5">
             <button
               type="button"
-              class=" text-warning btn btn-outline-secondary font-weight-bold  "
+              class=" text-dark btn btn-outline-warning font-weight-bold  "
             >
               Discover Now
             </button>
