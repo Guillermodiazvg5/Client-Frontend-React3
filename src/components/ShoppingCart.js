@@ -38,6 +38,10 @@ const onclearAllCart = () => {
 
 
 
+
+
+
+
   return (
     
     
@@ -97,4 +101,6 @@ const onclearAllCart = () => {
       
     
   )
+//console.log(allProducts);
+  
 }

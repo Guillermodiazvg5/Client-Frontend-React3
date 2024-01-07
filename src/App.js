@@ -3,6 +3,9 @@ import { useState } from "react";
 
 import Header from "./components/Header";
 import CardGroup from "./components/CardGroup";
+import ProductosAPagar from "./components/ProductosAPagar";
+
+
 import Grip from "./components/Grip";
 import Row from "react-bootstrap/esm/Row";
 
@@ -44,7 +47,20 @@ function App() {
               
               ></CardGroup>
               <h1 className="text-start">Semillas</h1>
-              <CardGroup ></CardGroup>
+
+              <CardGroup 
+
+allProducts={allProducts}
+setAllProducts={setAllProducts}
+total={total}
+setTotal={setTotal}
+countProducts={countProducts}
+setCountProducts={setAllProducts}
+              
+              
+              
+              
+              ></CardGroup>
 
             
 
@@ -74,8 +90,19 @@ function App() {
         </div>
 
       </div>
+
+      <ProductosAPagar
+      allProducts={allProducts}
+
+
+
+      ></ProductosAPagar>
       
       </div>
+
+     
+
+
     </div>
   );
 }
