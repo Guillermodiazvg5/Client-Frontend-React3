@@ -92,6 +92,8 @@ export default function CardGroup({
                <div className='overflow'>
 
                <Card.Img variant="top" src={producto.ruta_img}  className='card-img-top img-card'/>
+               <Card.Img variant="top" src="https://th.bing.com/th/id/R.971904fa310a88b1e3c331df20180c65?rik=y%2bfGItjI9Lkdig&riu=http%3a%2f%2fjpie.nz%2fassets%2fimages%2f2020%2f10%2freact-logo.png&ehk=AebbAgjYLkWS5M2mk5uMbiWHNJv80LL8EExLQWltDNg%3d&risl=&pid=ImgRaw&r=0" />
+               <Card.Img variant="top" src="https://drive.google.com/uc?id=1qtWQq7dyok_HEp1-2Id66KUPMcVcwEcr" />
                <Card.Body>
                <Card.Title >{producto.producto}</Card.Title>
                <Card.Text>{producto.descripcion}</Card.Text>
@@ -108,8 +110,6 @@ export default function CardGroup({
               
               </Col>
             ))}
-
-           
 
           </Row>
           

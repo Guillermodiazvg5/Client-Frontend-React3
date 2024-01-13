@@ -13,3 +13,31 @@
     position: sticky !important;
     top: 0;
   }
+
+
+  
+.card-img-top {
+
+  transition: all 0.7s ease-in-out;
+
+
+}
+
+.card-img-top:hover{
+  transform: scale(1.4);
+  
+}
+
+
+
+
+
+
+.img-card {
+
+max-width: 317px;
+max-height: 158px ;
+min-width: 197px ;
+min-height: 158px ;
+
+}
