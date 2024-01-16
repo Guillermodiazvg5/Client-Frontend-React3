@@ -8,7 +8,7 @@ export default function ProductosAPagar({ allProducts }) {
       const sendState = async () => {
         try {
           const response = await axios.post(
-            "http://localhost:7000/my-endpoint",
+            "https://render-nodejs-react-healthfoods.onrender.com/my-endpoint",
             { allProducts }
           );
           console.log(response.data);
