@@ -27,10 +27,13 @@ export default function CardGroup({
    const [productos, setProductos] = useState([]);
 
   const cargarProductos = async () => {
-    const response = await fetch("http://localhost:7000/products");                          // captura de datos desde el 7000 del servidor - backend
+
+    const response = await fetch("https://render-nodejs-react-healthfoods.onrender.com/products");                 // captura de datos desde el  del https://render-nodejs-react-healthfoods.onrender.com/     servidor - backend - Render
+   // const response = await fetch("http://localhost:700/products");                                               // captura de datos desde el 7000 del servidor - backend
+                        
     const data = await response.json();
-    console.log(data);                                                                      // arreglos de los productos
-    setProductos(data);
+    console.log(data);                                                                                             // arreglos de los productos
+    setProductos(data); 
     
     
   };
