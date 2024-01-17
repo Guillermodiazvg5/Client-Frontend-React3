@@ -85,7 +85,7 @@ export default function CardGroup({
 
     <>
     
-          <Row className="background-nuts mt-5 mb-5" >
+          <Row className=" container background-nuts mt-5 mb-5" >
             {productos.map((producto, index) => (
               <Col className="col-md-4" key={index}>
 

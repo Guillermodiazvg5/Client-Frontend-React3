@@ -50,12 +50,12 @@ function App() {
 
               <CardGroup 
 
-allProducts={allProducts}
-setAllProducts={setAllProducts}
-total={total}
-setTotal={setTotal}
-countProducts={countProducts}
-setCountProducts={setAllProducts}
+                allProducts={allProducts}
+                setAllProducts={setAllProducts}
+                total={total}
+                setTotal={setTotal}
+                countProducts={countProducts}
+                setCountProducts={setAllProducts}
               
               
               
