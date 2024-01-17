@@ -87,9 +87,9 @@ export default function CardGroup({
     
           <Row className=" container background-nuts mt-5 mb-5" >
             {productos.map((producto, index) => (
-              <Col className="col-md-4 " key={index}>
+              <Col className="col  " key={index}>
 
-               <Card  className='card text-center m-3 ' style={{ width: '14rem' }}>
+               <Card  className='card text-center m-3 w-100 ' >
 
                <div className='overflow'>
 
