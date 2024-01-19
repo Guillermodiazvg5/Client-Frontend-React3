@@ -1,109 +1,86 @@
 
 import { useState } from "react";
+import { BrowserRouter  , Routes , Route  } from "react-router-dom";
 
 import Header from "./components/Header";
 import CardGroup from "./components/CardGroup";
 import ProductosAPagar from "./components/ProductosAPagar";
+import Footer from "./components/Footer";
+import About from "./components/About";
+import Products from "./components/Products";
+import Contacts from "./components/Contacts";
+import Blog from "./components/Blog"
 
-
-import Grip from "./components/Grip";
-import Row from "react-bootstrap/esm/Row";
-
-import ArregloDeObejtos from "./components/DatosCarrito";
 
 import "./App.css";
 import ShoppingCart from "./components/ShoppingCart";
 
+
+
 function App() {
-
-  const [allProducts , setAllProducts] = useState([]);
-  const [total , setTotal] = useState(0);
-  const [countProducts , setCountProducts] = useState([0]);
-
-
+  const [allProducts, setAllProducts] = useState([]);
+  const [total, setTotal] = useState(0);
+  const [countProducts, setCountProducts] = useState([0]);
 
   return (
-    <div className="App">
-      <div className="background-image"></div>
-       <div className="container marco-main">
-      <Header></Header>
+    <BrowserRouter>
+      <div className="App">
+        <div className="background-image"></div>
+        <div className="container marco-main">
+          <Header />
+          <Routes>
+            <Route path="/" element={
+              <div className="container">
+                <div className="row">
+                  <div className="col-8">
+                    <h1 className="text-start">Frutos Secos</h1>
+                    <CardGroup
+                      allProducts={allProducts}
+                      setAllProducts={setAllProducts}
+                      total={total}
+                      setTotal={setTotal}
+                      countProducts={countProducts}
+                      setCountProducts={setAllProducts}
+                    />
+                    <h1 className="text-start">Semillas</h1>
+                    <CardGroup
+                      allProducts={allProducts}
+                      setAllProducts={setAllProducts}
+                      total={total}
+                      setTotal={setTotal}
+                      countProducts={countProducts}
+                      setCountProducts={setAllProducts}
+                    />
+                  </div>
+                  <div className="col-4">
+                    <div className="sticky mt-5">
+                      <h1 className="">Carrito</h1>
+                      <ShoppingCart
+                        allProducts={allProducts}
+                        setAllProducts={setAllProducts}
+                        total={total}
+                        setTotal={setTotal}
+                        countProducts={countProducts}
+                        setCountProducts={setAllProducts}
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            } />
+            <Route path="/about" element={<About />} />
+            <Route path="/products" element={<Products />} />
+            <Route path="/contacts" element={<Contacts />} />
+            <Route path="/blog" element={<Blog />} />
+          </Routes>
 
-      <div className="container  ">
-
-        <div className="row">
-
-          <div className=" col-8   ">
-
-           
-              <h1 className="text-start">Frutos Secos</h1>
-              <CardGroup
-              allProducts={allProducts}
-              setAllProducts={setAllProducts}
-              total={total}
-              setTotal={setTotal}
-              countProducts={countProducts}
-              setCountProducts={setAllProducts}
-
-              
-              ></CardGroup>
-              <h1 className="text-start">Semillas</h1>
-
-              <CardGroup 
-
-                allProducts={allProducts}
-                setAllProducts={setAllProducts}
-                total={total}
-                setTotal={setTotal}
-                countProducts={countProducts}
-                setCountProducts={setAllProducts}
-              
-              
-              
-              
-              ></CardGroup>
-
-            
-
-          </div>
-
-
-          <div className="col-4  ">
-            <div className="sticky mt-5  ">
-            <h1 className="">Carrito</h1>
-              <ShoppingCart
-
-               allProducts={allProducts}
-               setAllProducts={setAllProducts}
-               total={total}
-               setTotal={setTotal}
-               countProducts={countProducts}
-               setCountProducts={setAllProducts}
-              
-              
-              
-              
-              ></ShoppingCart>
-            </div>
-          </div>
-
-
-        </div>
-
-      </div>
-
-      <ProductosAPagar
-      allProducts={allProducts}
-
-
-
-      ></ProductosAPagar>
+          <ProductosAPagar allProducts={allProducts}  ></ProductosAPagar>
       
+
+          <Footer />
+        </div>
       </div>
-
-     
-
-
-    </div>
+    </BrowserRouter>
   );
 }
 
