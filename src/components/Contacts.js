@@ -30,7 +30,7 @@ export default function Contacts() {
           <h2>Barranquilla</h2>
           <p>Dirección: Calle 72 # 45-23</p>
           <p>Teléfono: (5) 123-4567</p>
-          <p>Correo electrónico: healthfoodbarranquilla@ejemplo.com</p>
+          <p>Correo electrónico: healthfoodbarranquilla@hotmail.com</p>
         </Col>
       </Row>
     </Container>

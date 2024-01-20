@@ -5,9 +5,9 @@ import './Products.css'
 
 export default function Products() {
   return (
-    <Container>
-      <h1>Nuestros productos</h1>
-      <Row className='m-3'>
+    <Container className='  mt-5'>
+      <h1 >Nuestros productos</h1>
+      <Row className='mt-5 mb-3'>
         <Col>
           <Card className='color-card-products'>
             <Card.Body>

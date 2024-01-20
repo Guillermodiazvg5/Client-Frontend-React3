@@ -5,9 +5,9 @@ import './Blog.css'
 
 export default function Blog() {
   return (
-    <Container className='m-5'>
+    <Container className='   mt-5'>
       <h1>Blog de alimentos saludables</h1>
-      <Row className='m-5'>
+      <Row className='mt-5 mb-3'>
         <Col>
           <Card className='color-card-blog'>
             <Card.Body>
@@ -31,7 +31,7 @@ export default function Blog() {
           </Card>
         </Col>
       </Row>
-      <Row className='m-5'>
+      <Row className='m-3'>
         <Col>
           <Card className='color-card-blog'>
             <Card.Body>
@@ -55,7 +55,7 @@ export default function Blog() {
           </Card>
         </Col>
       </Row>
-      <Row className='m-5'>
+      <Row className='m-3'>
         <Col>
           <Card className='color-card-blog'>
             <Card.Body>

@@ -68,10 +68,10 @@ function App() {
                 </div>
               </div>
             } />
-            <Route path="/about" element={<About />} />
-            <Route path="/products" element={<Products />} />
-            <Route path="/contacts" element={<Contacts />} />
-            <Route path="/blog" element={<Blog />} />
+            <Route path="/about" element={ <div> <About /> </div> } />
+            <Route path="/products" element={ <div className="container justify-content-center "> <Products /> </div>  } />
+            <Route path="/contacts" element={ <div className="container justify-content-center "> <Contacts /> </div> } />
+            <Route path="/blog" element={  <div className="container justify-content-center "> <Blog />  </div> } />
           </Routes>
 
           <ProductosAPagar allProducts={allProducts}  ></ProductosAPagar>
