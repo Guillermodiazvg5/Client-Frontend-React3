@@ -60,13 +60,13 @@ export default function ShoppingCartW({
 
     <Row>
 
-      <Col md={6} className=" d-flex justify-content-end ">
+      <Col md={6} className="  justify-content-end ">
         
          <ImgCarritoVacio ></ImgCarritoVacio>  
       
        </Col>
 
-      <Col md={6} className="d-flex align-items-center justify-content-start " >
+      <Col md={6} className=" align-items-center justify-content-start " >
 
 <Card.Title>Tu carrito HealthFood esta Vacío ...</Card.Title>
 <BsCartX size={25}></BsCartX>
@@ -95,7 +95,7 @@ export default function ShoppingCartW({
                   />
                 </Col>
 
-                <Col md={6} className="d-flex align-items-start text-start">
+                <Col md={6} className=" align-items-start text-start">
                   <Card.Body>
                     <Card.Title className="titel-product">
                       {producto.producto}
