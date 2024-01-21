@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { useState } from 'react';
+import { useState , useEffect } from 'react';
 
 
 
@@ -16,15 +16,19 @@ import { FiShoppingCart } from "react-icons/fi";
 import Icons_Carrito from '../assets/Icons_Carrito';
 
 
-export default function Header({total , allProducts , countProducts , language , setLanguage }) {
+export default function Header({totaldeproductos, setTotaldeproductos , total , allProducts , countProducts , language , setLanguage }) {
   
 
   
-  
+  useEffect(() => {
+    const result = allProducts.reduce((total, producto) => total + producto.cantidad_carrito, 0);
+    setTotaldeproductos(result);
+  }, [allProducts]);
 
-  const totaldeproductos = allProducts.reduce((total, producto) => total + producto.cantidad_carrito, 0);
 
-  
+   //const totaldeproductos = allProducts.reduce((total, producto) => total + producto.cantidad_carrito, 0);
+   /// module.exports.totaldeproductos = totaldeproductos;
+  //module.exports = totaldeproductos;
 
   return (
 
@@ -125,3 +129,4 @@ export default function Header({total , allProducts , countProducts , language ,
     </div>
   );
 }
+

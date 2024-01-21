@@ -23,6 +23,7 @@ function App() {
   const [allProducts, setAllProducts] = useState([]);
   const [total, setTotal] = useState(0);
   const [countProducts, setCountProducts] = useState([0]);
+  const [totaldeproductos, setTotaldeproductos] = useState(0) ; 
   
 
   
@@ -44,6 +45,8 @@ function App() {
           <Header 
           allProducts={allProducts}
           countProducts={countProducts}
+          totaldeproductos={totaldeproductos}
+          setTotaldeproductos={setTotaldeproductos}
           />
 
           <Routes>
@@ -96,7 +99,10 @@ function App() {
                         total={total}
                         setTotal={setTotal}
                         countProducts={countProducts}
-                        setCountProducts={setAllProducts} />  </div> }/>
+                        setCountProducts={setAllProducts}
+                        totaldeproductos={totaldeproductos}
+                        
+                        />  </div> }/>
           </Routes>
 
           <ProductosAPagar allProducts={allProducts}  ></ProductosAPagar>
