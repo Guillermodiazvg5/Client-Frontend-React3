@@ -10,10 +10,12 @@ import About from "./components/About";
 import Products from "./components/Products";
 import Contacts from "./components/Contacts";
 import Blog from "./components/Blog"
+import Icons_Carrito from "./assets/Icons_Carrito";
 
 
 import "./App.css";
 import ShoppingCart from "./components/ShoppingCart";
+import ShoppingCartW from "./components/ShoppingCartW";
 
 
 
@@ -21,13 +23,29 @@ function App() {
   const [allProducts, setAllProducts] = useState([]);
   const [total, setTotal] = useState(0);
   const [countProducts, setCountProducts] = useState([0]);
+  
+
+  
+
 
   return (
+
+
+
+
     <BrowserRouter>
+
+
+
+
       <div className="App">
         <div className="background-image"></div>
         <div className="container marco-main">
-          <Header />
+          <Header 
+          allProducts={allProducts}
+          countProducts={countProducts}
+          />
+
           <Routes>
             <Route path="/" element={
               <div className="container">
@@ -72,6 +90,13 @@ function App() {
             <Route path="/products" element={ <div className="container justify-content-center "> <Products /> </div>  } />
             <Route path="/contacts" element={ <div className="container justify-content-center "> <Contacts /> </div> } />
             <Route path="/blog" element={  <div className="container justify-content-center "> <Blog />  </div> } />
+            <Route path="/ShoppingCartW" element={  <div className="container justify-content-center ">  <ShoppingCartW 
+                        allProducts={allProducts}
+                        setAllProducts={setAllProducts}
+                        total={total}
+                        setTotal={setTotal}
+                        countProducts={countProducts}
+                        setCountProducts={setAllProducts} />  </div> }/>
           </Routes>
 
           <ProductosAPagar allProducts={allProducts}  ></ProductosAPagar>

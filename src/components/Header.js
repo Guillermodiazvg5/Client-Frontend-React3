@@ -1,5 +1,9 @@
 import React from 'react';
 
+import { useState } from 'react';
+
+
+
 import { Link } from 'react-router-dom';
 
 
@@ -9,13 +13,16 @@ import Logo_HealtFood from '../assets/Logo_HealtFood';
 import './Header.css'
 import SloganImage from './SloganImage';
 import { FiShoppingCart } from "react-icons/fi";
+import Icons_Carrito from '../assets/Icons_Carrito';
 
 
-export default function Header() {
+export default function Header({total , allProducts , countProducts , language , setLanguage }) {
   
 
   
   
+
+  const totaldeproductos = allProducts.reduce((total, producto) => total + producto.cantidad_carrito, 0);
 
   
 
@@ -88,16 +95,27 @@ export default function Header() {
           </ul>
         </div>
 
+       
+
         <div class=" col-4 text-end ">
+
+           
+
+          
           <button type="button" class="btn btn-outline-secondary m-2">
             Loginn
           </button>
           <button type="button" class="btn btn-warning m-3">
             Sign-up
           </button>
+          
           <button type="button" class="btn btn-outline-warning">
-          <FiShoppingCart size={22} color="black" />
+          <Link to="/ShoppingCartW" className="nav-link px-2 text-dark btn-outline-warning rounded">
+          <Icons_Carrito  total = {totaldeproductos} />
+          </Link>
           </button>
+
+
         </div>
       </div>
 
