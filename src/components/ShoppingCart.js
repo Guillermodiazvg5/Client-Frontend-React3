@@ -43,7 +43,8 @@ export default function ShoppingCart({
   };
 
   return (
-    <Table striped bordered hover className="mx-auto w-75   ">
+    <div className="">
+    <Table striped bordered hover className="mx-auto   container  ">
       <thead>
         <tr>
           <th>Cantidad</th>
@@ -98,6 +99,7 @@ export default function ShoppingCart({
         </tr>
       </tbody>
     </Table>
+    </div>
   );
   //console.log(allProducts);
 }

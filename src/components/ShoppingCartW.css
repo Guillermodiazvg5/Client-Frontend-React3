@@ -33,3 +33,22 @@
     min-height: 168px ;
     
     }
+
+
+    .Title-carrito-vacio{
+
+      font-weight: bold !important;
+    }
+
+    .card-img-top {
+
+      transition: all 0.7s ease-in-out;
+    
+    
+    }
+    
+    .card-img-top:hover{
+      transform: scale(1.1);
+      
+    }
+    

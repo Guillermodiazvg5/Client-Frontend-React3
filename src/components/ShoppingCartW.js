@@ -3,6 +3,8 @@ import axios from "axios";
 
 import Button from "react-bootstrap/Button";
 
+import { Link } from 'react-router-dom';
+
 import Card from "react-bootstrap/Card";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
@@ -66,11 +68,20 @@ export default function ShoppingCartW({
       
        </Col>
 
-      <Col md={6} className=" align-items-center justify-content-start " >
+      <Col md={6} className="container d-flex align-items-center justify-content-start " >
 
-<Card.Title>Tu carrito HealthFood esta Vacío ...</Card.Title>
-<BsCartX size={25}></BsCartX>
+        <Card.Title className="Title-carrito-vacio">Tu carrito HealthFood esta Vacío ...</Card.Title>
+        <BsCartX size={25}></BsCartX>
+        
+      
       </Col>
+      <Col>
+      <Button variant="secondary">
+         <Link to="/" className="nav-link px-2 text-light btn-outline-secondary rounded">Agrega tus Productos</Link>
+          
+      </Button>
+      </Col>
+
     </Row>
 
    
@@ -81,21 +92,25 @@ export default function ShoppingCartW({
 
 
   ) : (
-    <Row className="justify-content-between">
+<div className='overflow'>
+    <Row className="container ">
       <Col md={9}>
         {allProducts.map((producto) => (
           <div key={producto.id} className=" container   ">
-            <Card className="mb-3">
+
+            <Card className=" card text-center m-3 w-100">
+
+            
               <Row className="">
-                <Col md={4}>
+                <Col  className="container d-flex  justify-content-end" >
                   <Card.Img
                     variant="top"
-                    className="img-card"
+                    className="img-card  card-img-top"
                     src={producto.ruta_img}
                   />
                 </Col>
 
-                <Col md={6} className=" align-items-start text-start">
+                <Col  className=" container align-items-start  text-start ">
                   <Card.Body>
                     <Card.Title className="titel-product">
                       {producto.producto}
@@ -108,7 +123,7 @@ export default function ShoppingCartW({
                   </Card.Body>
                 </Col>
 
-                <Col md={2}>
+                <Col >
                   <Card.Body>
                     <Card.Text>$ {producto.precio_pesos}</Card.Text>
                     <Button
@@ -125,7 +140,13 @@ export default function ShoppingCartW({
 
                 
               </Row>
+
+
+              
+
             </Card>
+
+            
           </div>
 
 
@@ -136,8 +157,8 @@ export default function ShoppingCartW({
       </Col>
 
 
-      <Col md={3}>
-          <Card style={{ width: "18rem" }}>
+      <Col md={3} className="container d-flex align-items-start  justify-content-center" >
+          <Card style={{ width: "17rem" }} className="mt-3">
             <Card.Body>
               <Card.Title>Tu orden</Card.Title>
               <Card.Text>
@@ -155,7 +176,7 @@ export default function ShoppingCartW({
 
     </Row>
 
-
+    </div>
 
 
   )}
