@@ -14,7 +14,7 @@ import "./CardGroup.css";
 
 
 
-export default function CardGroup({
+export default function CardGroupSemillas({
   allProducts,
   setAllProducts,
   countProducts,
@@ -86,12 +86,12 @@ export default function CardGroup({
     <>
     
     <Row className=" container background-nuts mt-5 mb-5" >
-  {productos.filter(producto => producto.categoria === 'frutosSecos').map((producto, index) => (
-    <Col className="col  " key={index}>
+  {productos.filter(producto => producto.categoria === 'semillas').map((producto, index) => (
+    <Col className="    " key={index}>
       <Card  className='card text-center m-3 w-100 ' >
-      <div className='overflow'>
-          <Card.Img variant="top" src={producto.ruta_img}  className='img-fluid  card-img-top img-card'/>
-          <Card.Body> 
+        <div className='overflow'>
+          <Card.Img variant="top"   className=' img-fluid card-img-top img-card' src={producto.ruta_img}  />
+          <Card.Body>
             <Card.Title >{producto.producto}</Card.Title>
             <Card.Text>{producto.descripcion}</Card.Text>
             <Card.Text> X {producto.cantidad_gramos}g </Card.Text>
@@ -104,7 +104,7 @@ export default function CardGroup({
   ))}
 </Row>
           
-      
+         
 
           <DatosCarrito
           

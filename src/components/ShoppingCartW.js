@@ -116,7 +116,7 @@ export default function ShoppingCartW({
                       {producto.producto}
                     </Card.Title>
                     <Card.Text>{producto.descripcion}</Card.Text>
-
+                    <Card.Text> X {producto.cantidad_gramos}g </Card.Text>
                     <Card.Text>
                       Cantidad {producto.cantidad_carrito}
                     </Card.Text>

@@ -4,6 +4,7 @@ import { BrowserRouter  , Routes , Route  } from "react-router-dom";
 
 import Header from "./components/Header";
 import CardGroup from "./components/CardGroup";
+import CardGroupSemillas from "./components/CardGroupSemillas";
 import ProductosAPagar from "./components/ProductosAPagar";
 import Footer from "./components/Footer";
 import About from "./components/About";
@@ -64,7 +65,7 @@ function App() {
                       setCountProducts={setAllProducts}
                     />
                     <h1 className="text-start">Semillas</h1>
-                    <CardGroup
+                    <CardGroupSemillas
                       allProducts={allProducts}
                       setAllProducts={setAllProducts}
                       total={total}

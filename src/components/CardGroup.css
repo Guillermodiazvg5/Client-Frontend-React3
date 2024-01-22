@@ -24,7 +24,7 @@
 }
 
 .card-img-top:hover{
-  transform: scale(1.4);
+  transform: scale(1.6);
   
 }
 
@@ -35,9 +35,10 @@
 
 .img-card {
 
-max-width: 317px;
-max-height: 158px ;
-min-width: 197px ;
-min-height: 158px ;
+  max-width: 411px;
+  max-height: 244px ;
+  min-width: 200px ;
+  min-height: 122px ;
 
 }
+

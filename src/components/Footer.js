@@ -8,6 +8,7 @@ import Logo_HealtFood from '../assets/Logo_HealtFood2';
 import { RiFacebookCircleLine } from "react-icons/ri";
 import { FaInstagram } from "react-icons/fa";
 import { BsTwitterX } from "react-icons/bs";
+import { FaLinkedin } from "react-icons/fa";
 
 
 
@@ -51,6 +52,7 @@ export default function Footer() {
                     <RiFacebookCircleLine className='m-2' size={45} color="blue" onClick={() => window.open('https://www.facebook.com/')}/>
                     <FaInstagram className='m-2' size={40} color="red" onClick={() => window.open('https://www.instagram.com/')} />
                     <BsTwitterX  className='m-2' size={40} color="black" onClick={() => window.open('https://twitter.com/')} />
+                    <FaLinkedin className='m-2' size={40} color="blue"  onClick={() => window.open('https://co.linkedin.com/')}                         /> 
              </span>
             </div>
             <ul className="content-footer_2 d-flex flex-column align-items-center align-items-lg-start">
