@@ -1,44 +1,24 @@
 .background-nuts {
+  background-color: #b07f3636;
+}
 
-    background-color:#b07f3636;
-   
-   }
+.sticky {
+  position: -webkit-sticky; /* Safari */
+  position: sticky !important;
+  top: 0;
+}
 
-  
-   
-  
-
-  .sticky {
-    position: -webkit-sticky ; /* Safari */
-    position: sticky !important;
-    top: 0;
-  }
-
-
-  
 .card-img-top {
-
   transition: all 0.7s ease-in-out;
-
-
 }
 
-.card-img-top:hover{
+.card-img-top:hover {
   transform: scale(1.6);
-  
 }
-
-
-
-
-
 
 .img-card {
-
   max-width: 411px;
-  max-height: 244px ;
-  min-width: 200px ;
-  min-height: 122px ;
-
+  max-height: 244px;
+  min-width: 200px;
+  min-height: 122px;
 }
-

@@ -1,13 +1,12 @@
-import React from 'react'
+import React from "react";
 
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
 
 export default function Grip() {
   return (
-     
-<Container>
+    <Container>
       <Row>
         <Col>1 of 3</Col>
         <Col xs={6}>2 of 3 (wider)</Col>
@@ -19,6 +18,5 @@ export default function Grip() {
         <Col>3 of 3</Col>
       </Row>
     </Container>
-
-  )
+  );
 }

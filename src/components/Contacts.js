@@ -1,11 +1,11 @@
-import React from 'react';
-import { Container, Row, Col } from 'react-bootstrap';
+import React from "react";
+import { Container, Row, Col } from "react-bootstrap";
 
 export default function Contacts() {
   return (
     <Container>
-      <h1 className='m-5'>Contáctanos</h1>
-      <Row className='m-5'>
+      <h1 className="m-5">Contáctanos</h1>
+      <Row className="m-5">
         <Col>
           <h2>Bogotá</h2>
           <p>Dirección: Carrera 7 # 71-21</p>
@@ -19,7 +19,7 @@ export default function Contacts() {
           <p>Correo electrónico: healthfoodmedellin@hotmail.com</p>
         </Col>
       </Row>
-      <Row className='m-5'>
+      <Row className="m-5">
         <Col>
           <h2>Cali</h2>
           <p>Dirección: Avenida 3 Norte # 50-50</p>

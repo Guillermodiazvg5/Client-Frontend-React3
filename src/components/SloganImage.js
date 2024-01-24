@@ -1,10 +1,7 @@
 import React from "react";
 
-
 import CarouselHealth from "./CarouselHealth";
-import FrutosSecos from '../assets/FrutosSecos.jpg'
-
-
+import FrutosSecos from "../assets/FrutosSecos.jpg";
 
 export default function SloganImage() {
   return (
@@ -33,12 +30,7 @@ export default function SloganImage() {
         </div>
 
         <div class="col-6  text-dark d-flex align-items-center justify-content-center text-center second-column ">
-         
-         
-         
           <CarouselHealth></CarouselHealth>
-        
-        
         </div>
       </div>
     </div>

@@ -1,40 +1,27 @@
-.card:hover{
-    box-shadow: 5px 12px 22px 1px rgb(102, 82, 15)  !important;
-    transition: all 0.7s linear;
+.card:hover {
+  box-shadow: 5px 12px 22px 1px rgb(102, 82, 15) !important;
+  transition: all 0.7s linear;
 }
 
-.card-body{
-    padding: 2rem 0 !important;
+.card-body {
+  padding: 2rem 0 !important;
 }
 
 .card-img-top {
-
-    transition: all 0.7s ease-in-out;
-
-
+  transition: all 0.7s ease-in-out;
 }
 
-.card-img-top:hover{
-    transform: scale(1.4);
-    
+.card-img-top:hover {
+  transform: scale(1.4);
 }
-
-
-
-
-
 
 .img-card {
-
-max-width: 317px;
-max-height: 158px ;
-min-width: 197px ;
-min-height: 158px ;
-
+  max-width: 317px;
+  max-height: 158px;
+  min-width: 197px;
+  min-height: 158px;
 }
 
-.overflow{
-
-    overflow: hidden;
-
+.overflow {
+  overflow: hidden;
 }
