@@ -1,10 +1,5 @@
-import React from 'react'
+import React from "react";
 
-export default function DatosCarrito({DatosCarrito}) {
-  return 
-    
-    
-    
-    
-  
+export default function DatosCarrito({ DatosCarrito }) {
+  return;
 }
