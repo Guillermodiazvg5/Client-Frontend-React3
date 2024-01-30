@@ -43,7 +43,7 @@ export default function ShoppingCartW({
   const PagarProductos = async (productos) => {
     if (allProducts.length > 0) {
       const response = await axios.post(
-        "http://localhost:7000/create-order",
+        "https://render-nodejs-react-healthfoods.onrender.com/create-order",
         productos
       );
 
